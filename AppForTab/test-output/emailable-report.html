@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">2</td><td class="num">399,774</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">App</td><td><a href="#m0">TechMenu</a></td><td rowspan="1">1524217035958</td><td rowspan="1">301076</td></tr><tr class="failedeven"><td><a href="#m1">Tour</a></td><td rowspan="1">1524217337039</td><td rowspan="1">604</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">App</td><td><a href="#m2">DownloadContent</a></td><td rowspan="1">1524216937936</td><td rowspan="1">3396</td></tr><tr class="passedeven"><td><a href="#m3">HardwareMenu</a></td><td rowspan="1">1524216941335</td><td rowspan="1">94622</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">App#TechMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: &lt;html&gt;&lt;body&gt;&lt;h1&gt;504 Gateway Time-out&lt;/h1&gt;
+The server didn&apos;t respond in time.
+&lt;/body&gt;&lt;/html&gt;
+Command duration or timeout: 300.28 seconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:08.638Z&apos;
+System info: host: &apos;LAPTOP-KV52D3LO&apos;, ip: &apos;192.168.1.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /tmp/tmpazc7AJ/Key.apk, appActivity: com.keysight.keysightpartne..., appPackage: com.keysight.keysightpartne..., appWaitActivity: com.keysight.keysightpartne..., appWaitPackage: com.keysight.keysightpartne..., automationName: Appium, databaseEnabled: false, desired: {app: /tmp/tmpazc7AJ/Key.apk, automationName: Appium, deviceName: Google Pixel GoogleAPI Emul..., eventTimings: true, maxTypingFrequency: 8, newCommandTimeout: 0, noReset: true, orientation: PORTRAIT, platformName: Android, platformVersion: 7.0, proxy: {proxyAutoconfigUrl: http://127.0.0.1:19876/pac.js, proxyType: PAC}, udid: emulator-5554, webdriver.remote.quietExceptions: false}, deviceManufacturer: unknown, deviceModel: Android SDK built for x86_64, deviceName: emulator-5554, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, eventTimings: true, events: {commands: []}, hasMetadata: true, javascriptEnabled: true, locationContextEnabled: false, maxTypingFrequency: 8, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, orientation: PORTRAIT, platform: LINUX, platformName: LINUX, platformVersion: 7.0, proxy: Proxy(pac: http://127.0.0.1..., takesScreenshot: true, udid: emulator-5554, warnings: {}, webStorageEnabled: false, webdriver.remote.quietExceptions: false, webdriver.remote.sessionid: 9bd0d5a5ed134344b953083aaee...}
+Session ID: 9bd0d5a5ed134344b953083aaee5d11a
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;2. Industries &amp; Technologies&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:579)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at App.TechMenu(App.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">App#Tour</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnsupportedCommandException: ERROR The test with session id 9bd0d5a5ed134344b953083aaee5d11a has already finished, and can&apos;t receive further commands.
+You can learn more at https://saucelabs.com/jobs/9bd0d5a5ed134344b953083aaee5d11a
+For help, please check https://wiki.saucelabs.com/display/DOCS/Common+Error+Messages
+Command duration or timeout: 603 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:08.638Z&apos;
+System info: host: &apos;LAPTOP-KV52D3LO&apos;, ip: &apos;192.168.1.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /tmp/tmpazc7AJ/Key.apk, appActivity: com.keysight.keysightpartne..., appPackage: com.keysight.keysightpartne..., appWaitActivity: com.keysight.keysightpartne..., appWaitPackage: com.keysight.keysightpartne..., automationName: Appium, databaseEnabled: false, desired: {app: /tmp/tmpazc7AJ/Key.apk, automationName: Appium, deviceName: Google Pixel GoogleAPI Emul..., eventTimings: true, maxTypingFrequency: 8, newCommandTimeout: 0, noReset: true, orientation: PORTRAIT, platformName: Android, platformVersion: 7.0, proxy: {proxyAutoconfigUrl: http://127.0.0.1:19876/pac.js, proxyType: PAC}, udid: emulator-5554, webdriver.remote.quietExceptions: false}, deviceManufacturer: unknown, deviceModel: Android SDK built for x86_64, deviceName: emulator-5554, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, eventTimings: true, events: {commands: []}, hasMetadata: true, javascriptEnabled: true, locationContextEnabled: false, maxTypingFrequency: 8, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, orientation: PORTRAIT, platform: LINUX, platformName: LINUX, platformVersion: 7.0, proxy: Proxy(pac: http://127.0.0.1..., takesScreenshot: true, udid: emulator-5554, warnings: {}, webStorageEnabled: false, webdriver.remote.quietExceptions: false, webdriver.remote.sessionid: 9bd0d5a5ed134344b953083aaee...}
+Session ID: 9bd0d5a5ed134344b953083aaee5d11a
+*** Element info: {Using=accessibility id, value=Open}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:579)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at App.Tour(App.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">App#DownloadContent</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">App#HardwareMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
