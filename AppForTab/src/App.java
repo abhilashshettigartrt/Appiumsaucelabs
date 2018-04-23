@@ -21,7 +21,7 @@ public class App extends Caps {
 
 	@Test
 	public void HardwareMenu() {
-		AndroidElement Hardware = driver.findElementByXPath("//android.widget.TextView[@text='1. Hardware']");
+		AndroidElement Hardware = driver.findElementByXPath("//android.widget.TextView[@text='DATA']");
 		Assert.assertEquals("1. Hardware", Hardware.getText(), "The Menu is Matched");
 		Hardware.click();
 		System.out.println("Hardware Page");
