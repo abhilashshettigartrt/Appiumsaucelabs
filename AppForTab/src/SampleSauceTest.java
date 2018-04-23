@@ -7,7 +7,7 @@ import java.net.URL;
 
 public class SampleSauceTest {
 
-  public static final String USERNAME = "abhilash19995";
+  public static final String USERNAME = "*************";
   public static final String ACCESS_KEY = "***************************************";
   public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:80/wd/hub";
 
