@@ -18,7 +18,7 @@ public class SampleSauceTest {
     capabilities.setCapability("platformName", "Android");
     capabilities.setCapability("deviceName", "Google Pixel GoogleAPI Emulator");
     capabilities.setCapability("platformVersion", "7.0");
-    capabilities.setCapability("app", "sauce-storage:Key.apk");
+    capabilities.setCapability("app", "************");
     capabilities.setCapability("deviceOrientation", "portrait");
     capabilities.setCapability("appiumVersion", "1.7.2");
 
