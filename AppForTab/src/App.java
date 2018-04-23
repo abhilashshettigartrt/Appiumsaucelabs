@@ -27,16 +27,16 @@ public class App extends Caps {
 		System.out.println("Hardware Page");
 		driver.findElementByAndroidUIAutomator(
 				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"PXI Products & Solutions\").instance(0))");
-		driver.findElementByXPath("//android.widget.TextView[@text='PXI Products & Solutions']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='DAT']").click();
 		driver.findElementByAndroidUIAutomator(
 				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"PXI Vector Network Analyzers\").instance(0))");
-		driver.findElementByXPath("//android.widget.TextView[@text='PXI Vector Network Analyzers']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='DATA']").click();
 		driver.findElementByAndroidUIAutomator(
 				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"M9375A\").instance(0))");
-		driver.findElementByXPath("//android.widget.TextView[@text='M9375A']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='DATA']").click();
 
 		AndroidElement ProductTitle = driver.findElementById("com.keysight.keysightpartnerapps:id/txt_title");
-		Assert.assertEquals("PXI Vector Network Analyzers", ProductTitle.getText(), "The title is Matched");
+		Assert.assertEquals("DATA", ProductTitle.getText(), "The title is Matched");
 
 		System.out.println("Product page");
 
