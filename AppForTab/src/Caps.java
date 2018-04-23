@@ -12,15 +12,15 @@ import io.appium.java_client.android.AndroidElement;
 public class Caps {
 public static AndroidDriver<AndroidElement> Capabilities()  {
 	AndroidDriver<AndroidElement> driver=null;	
-	 String USERNAME = "abhilash19995";
-	 String ACCESS_KEY = "8471ae92-4efe-4934-9b49-e2f1f034b25a";
+	 String USERNAME = "**************";
+	 String ACCESS_KEY = "***************************************";
 	  String URL = "http://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:80/wd/hub";
 	  
 	try {
 		DesiredCapabilities caps = new DesiredCapabilities();
 		
 		File apps = new File("src");
-		File app = new File(apps,"sauce-storage:Key.apk");
+		File app = new File(apps,"******************");
 		
 //			caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Test");
 			caps.setCapability("automationName", "Appium");
